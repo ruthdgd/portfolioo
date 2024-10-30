@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/charlestoning');                
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/charlestoning");
 /* font-family: "Poppins", sans-serif;
 font-weight: 100;
 font-style: normal; */
 /* font-family: 'Charlestoning', sans-serif; */
-                                                
 
-:root{
-  --first-color: #053223 ;
-  --second-color: #eea83b; 
-  --third-color: #a13711;
+:root {
+  --first-color: #be58cf;
+  --second-color: #650076;
+  --third-color: #f31cb6;
+  --fourth-color: #121f39;
+  --fifth-color: #73a3b3;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -22,9 +23,9 @@ font-style: normal; */
 }
 
 @media screen and (min-width: 320px) {
-  .navbar{
+  .navbar {
     width: 100%;
-    height: 4rem;
+    height: 4.5rem;
     padding: 0.5rem;
     position: relative;
     background-color: var(--first-color);
@@ -35,7 +36,8 @@ font-style: normal; */
     width: 3rem;
   }
 
-  .checkbtn, .icons {
+  .checkbtn,
+  .icons {
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
@@ -57,7 +59,7 @@ font-style: normal; */
   .fi-br-cross {
     display: none;
   }
-  
+
   .checkbtn:checked ~ .fi-br-menu-burger {
     display: none;
   }
@@ -71,34 +73,157 @@ font-style: normal; */
   }
 
   .navbar-items {
-    width: 12.5rem;
+    width: 10rem;
     position: absolute;
     top: -11.1rem;
     z-index: -1;
     right: 0px;
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar-items li a {
-    font-size: 1.5rem;
-    color: var(--first-color);
+    width: 10rem;
+    font-size: 1rem;
+    color: var(--fourth-color);
     background-color: var(--third-color);
     display: block;
     padding: 10px 12px;
   }
 
+  .navbar-items li button {
+    border: none;
+  }
+
   .navbar-items li a:hover {
-    background-color: var(--second-color);
+    background-color: var(--fifth-color);
   }
 
   .checkbtn:checked ~ .navbar-items {
-    top: 4rem;
+    top: 4.5rem;
   }
 
+  .aboutme {
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      #640076,
+      #461b6e,
+      #2b2260,
+      #18224efb,
+      #121f39
+    );
+    display: flex;
+    align-items: center;
+  }
 
+  .aboutme img {
+    width: 50%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+  }
 
+  .aboutme-title {
+    color: var(--fifth-color);
+    padding-right: 1rem;
+    font-family: "Charlestoning", sans-serif;
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .aboutme-description {
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    background-color: var(--fourth-color);
+    color: var(--fifth-color);
+    text-align: center;
+  }
+
+  .projects {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    text-align: center;
+  }
+
+  .projects h2 {
+    text-align: center;
+  }
+
+  .projects-container {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .projects-card {
+    width: 15rem;
+    padding: 0.5rem;
+    color: var(--fifth-color);
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+  }
+
+  .projects-card img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .projects-card button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    border-style: none;
+  }
+
+  .skills {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    background: rgb(70,27,110);
+    background: url(./img/gato_con_lentes-removebg-preview.png), linear-gradient(270deg, rgba(70,27,110,1) 0%, rgba(230,47,178,1) 100%);;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills h2 {
+    text-align: center;
+  }
+
+  .skills-grilla {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+  }
+
+  .skill-logos {
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-logos img {
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 10px 14px 5px rgba(18, 31, 57, 0.45);-moz-box-shadow: 8px 10px 14px 5px rgba(18, 31, 57, 0.45);box-shadow: 8px 10px 14px 5px rgba(18, 31, 57, 0.45);
+  }
 }
 
-.navbar{
+.navbar {
   padding: 1rem;
   background-color: var(--first-color);
   background-position: center;
@@ -106,12 +231,12 @@ font-style: normal; */
   justify-content: space-between;
 }
 
-.navbar img{
+.navbar img {
   height: 3rem;
   width: 3rem;
 }
 
-.navbar-items{
+.navbar-items {
   width: 50%;
   height: 2rem;
   color: var(--second-color);
@@ -119,22 +244,3 @@ font-style: normal; */
   justify-content: space-between;
   align-items: center;
 }
-
-.aboutme{
-  background-color: #053223;
-}
-
-.aboutme-title{
-  padding: 2rem;
-  color: var(--second-color);
-  font-family: 'Charlestoning', sans-serif;
-  font-size: 5rem;  
-}
-
-.aboutme-title span{
-  color: var(--third-color);
-  font-family: 'Charlestoning', sans-serif;
-  font-size: 5rem;  
-}
-
-
