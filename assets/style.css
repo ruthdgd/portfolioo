@@ -89,6 +89,7 @@ font-style: normal; */
     background-color: var(--third-color);
     display: block;
     padding: 10px 12px;
+
   }
 
   .navbar-items li button {
@@ -186,8 +187,8 @@ font-style: normal; */
     height: 100%;
     padding: 2rem;
     display: flex;
-    background: rgb(70,27,110);
-    background: url(./img/gato_con_lentes-removebg-preview.png), linear-gradient(270deg, rgba(70,27,110,1) 0%, rgba(230,47,178,1) 100%);;
+    background: rgb(101, 54, 145);
+    background: url(./img/gato_con_lentes-removebg-preview.png), linear-gradient(270deg, rgba(101,54,145) 0%, rgb(226, 61, 179) 100%);;
     background-position-y: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -198,6 +199,7 @@ font-style: normal; */
 
   .skills h2 {
     text-align: center;
+    padding-bottom: 2rem;
   }
 
   .skills-grilla {
@@ -220,6 +222,62 @@ font-style: normal; */
     object-fit: cover;
     border-radius: 5px;
     -webkit-box-shadow: 8px 10px 14px 5px rgba(18, 31, 57, 0.45);-moz-box-shadow: 8px 10px 14px 5px rgba(18, 31, 57, 0.45);box-shadow: 8px 10px 14px 5px rgba(18, 31, 57, 0.45);
+  }
+
+  .contact{
+   width: 100%;
+   display: flex;
+   padding: 2rem; 
+   color: var(--fifth-color);
+   background-color: var(--fourth-color);
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .contact h2{
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .contact-form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form label, input, textarea{
+    width: 100%;
+  }
+
+  .contact-form input{
+    height: 20px;
+    border-radius: 5px;
+    border-style: none;
+  }
+
+  .contact-form textarea{
+    height: 8rem;
+    border-radius: 5px;
+    border-style: none;
+  }
+
+  .contact-form button{
+    margin: 1rem;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    font-weight: bold;
+  }
+
+  .final{
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    text-align: center;
   }
 }
 
