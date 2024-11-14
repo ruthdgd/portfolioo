@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
-    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"/>
     <title>Portfolio</title>
   </head>
   <body>
@@ -19,10 +17,11 @@
         <i class="icons fi fi-br-menu-burger"></i>
         <i class="icons fi fi-br-cross"></i>
         <ul class="navbar-items">
-          <li><a href="Aboutme">About me</a></li>
-          <li><a href="Projects">Projects</a></li>
-          <li><a href="Skills">Skills</a></li>
-          <li><a href="Contactme">Contact me!</a></li>
+          <li><a href="#Aboutme">Quién soy</a></li>
+          <li><a href="#Projects">Proyectos</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contactme">Contactame!</a></li>
+          <li><a href="./login.html">Ingresar</a></li>
         </ul>
       </nav>
       <section>
@@ -33,7 +32,7 @@
             <h2><span> PORTFOLIO </span></h2>
           </div>
         </div>
-        <div class="aboutme-description">
+        <div class="aboutme-description" id="Aboutme">
           <h2>Hola!</h2>
           <p>
             Soy Frontend Developer. Me apasiona crear experiencias de usuario
@@ -46,39 +45,42 @@
           </p>
         </div>
       </section>
-      <section class="projects">
-        <h2>Proyectos</h2>
+    </header>
+    <main>
+      <section class="projects" id="Projects">
+        <h2>PROYECTOS</h2>
         <div class="projects-container">
-          <div class="projects-card gm">
-            <h3>Generador de memes</h3>
-            <img src="./assets/img/meme.PNG" alt="Generador de meme" />
-            <a href="https://ruthdgd.github.io/GeneradorDeMeme/" target="_blank"
-              ><button>VER</button></a
-            >
-          </div>
-          <div class="projects-card ah">
-            <h3>Administrador de gastos</h3>
-            <img src="./assets/img/ahorradas.PNG" alt="ahorradas" />
-            <a
-              href="https://meliegalaz.github.io/trabajoAhorradas/"
-              target="_blank"
-              ><button>VER</button></a
-            >
-          </div>
-          <div class="projects-card ajax">
-            <h3>X-men Personajes</h3>
-            <img src="./assets/img/xmen.PNG" alt="X-men" />
-            <a
-              href="https://ruthdgd.github.io/AsincronismoXMEN/"
-              target="_blank"
-              ><button>VER</button></a
-            >
-          </div>
+          <div class="projects-card">   
+            <img src="./assets/img/genememe.png" alt="Generador de meme" />
+            <div class="projects-card-description">
+              <p>En esta aplicación web podés crear un meme a partir de la imagen que quieras. 
+                Podes agregarle texto, aplicar filtros y descargar la imagen cuando tu meme este listo!
+                Fue creada con HTML, CSS Y JavaScript</p>
+              <a href="https://ruthdgd.github.io/GeneradorDeMeme/" target="_blank"><button>VER APLICACIÓN</button></a>
+            </div>
+          </div>  
+          <div class="projects-card">                         
+            <img src="./assets/img/ahorradas.PNG" alt="ahorradas" />             
+            <div class="projects-card-description">
+              <p> Con AHORRADAS podes mantener en control de tus gastos y ganancias. Podes categorizarlos y realizar un reporte cada vez que lo necesites. 
+                  Fue creada con HTML, Tailwind Y JavaScript</p>
+              <a href="https://meliegalaz.github.io/trabajoAhorradas/" target="_blank"><button>VER APLICACIÓN</button></a>
+            </div>
+          </div>  
+          <div class="projects-card">   
+            <img src="./assets/img/xmen.PNG" alt="X-men" />                               
+            <div class="projects-card-description">
+              <p>X-MEN personajes, es una biblioteca con información de los personajes de Marvel, que aparecen en los comics. Podés agregar, editar o eliminar un personaje.  
+                    Podes agregarle texto, aplicar filtros y descargar la imagen cuando tu meme este listo!
+                    Fue creada con HTML, Sass Y JavaScript</p>
+              <a href="https://ruthdgd.github.io/AsincronismoXMEN/" target="_blank"><button>VER APLICACIÓN</button></a>        
+            </div>
+          </div>  
         </div>
       </section>
       <!-- ***************SKILL SECTION ****************************** -->
-      <section class="skills">
-        <h2>Skills</h2>
+      <section class="skills" id="Skills">
+        <h2>SKILLS</h2>
         <div class="skills-grilla">
           <div class="skill-logos">
             <img
@@ -130,9 +132,9 @@
           </div>
         </div>
       </section>
-      <!-- **********************COPNTACT SECTION********************* -->
-      <section class="contact">
-        <h2>CONTACT ME</h2>
+      <!-- **********************CONTACT SECTION********************* -->
+      <section class="contact" id="Contactme">
+        <h2>CONTACTAME</h2>
         <form class="contact-form">
           <label for="name">Apellido y Nombre</label>
           <input type="text" placeholder="María García">
@@ -145,15 +147,14 @@
           <button>ENVIAR</button>
         </form>
       </section>
-    </header>
+    </main>    
     <footer class="final">
       <h5>Creado por Ruth Delgado</h5>
       <div class="final-iconos">
-        <i class="fi fi-brands-linkedin"></i>
-        <i class="fi fi-brands-github"></i>
+        <a href="https://www.linkedin.com/in/ruth-dgd/"><i class="fi fi-brands-linkedin"></i></a>
+        <a href="https://github.com/ruthdgd"><i class="fi fi-brands-github"></i></a>
       </div>
     </footer>
-    <main></main>
     <footer></footer>
   </body>
 </html>
